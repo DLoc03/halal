@@ -2,7 +2,7 @@
   "header": {
     "home": "Trang chủ",
     "about-us": "Về chúng tôi",
-    "introduce-certificate": "Giới thiệu chứng nhận",
+    "introduce-certificate": "Tầm Quan Trọng Chứng Nhận Halal",
     "services": "Dịch vụ cung cấp",
     "industries-serve": "Lĩnh vực phục vụ",
     "certificate-process": "Quy trình chứng nhận",
@@ -10,5 +10,23 @@
     "commitment": "Cam kết",
     "contact": "Liên hệ"
   },
-  "language": "Ngôn ngữ"
+  "language": "Ngôn ngữ",
+  "footer": {
+    "description": "Giải pháp tư vấn và hỗ trợ chứng nhận Halal Indonesia chuyên nghiệp dành cho doanh nghiệp Việt Nam hướng tới thị trường Hồi giáo toàn cầu.",
+    "quickLinks": "Liên Kết Nhanh",
+    "contact": "Thông Tin Liên Hệ",
+    "office": "Địa Chỉ Văn Phòng",
+    "copyright": "Bảo lưu mọi quyền.",
+    "slogan": "Giải Pháp Halal Đáng Tin Cậy Cho Thị Trường Toàn Cầu.",
+    "sections": {
+      "about-us": "Về Chúng Tôi",
+      "introduce-certificate": "Tầm Quan Trọng Chứng Nhận Halal",
+      "services": "Dịch Vụ Cốt Lõi",
+      "industries-serve": "Ngành Hàng Hỗ Trợ",
+      "certificate-process": "Quy Trình Chứng Nhận",
+      "why-choose-us": "Tại Sao Chọn Chúng Tôi",
+      "commitment": "Cam Kết",
+      "contact": "Liên Hệ"
+    }
+  }
 }

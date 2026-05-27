@@ -1,0 +1,28 @@
+{
+  "badge": "CAM KẾT CỦA CHÚNG TÔI",
+  "title": "Xây Dựng Niềm Tin Thông Qua Tiêu Chuẩn Halal Quốc Tế",
+  "description": "Chúng tôi tin rằng chứng nhận Halal không chỉ là yêu cầu pháp lý mà còn là biểu tượng của niềm tin, sự minh bạch và đẳng cấp kinh doanh quốc tế.",
+  "quote": "Đồng Hành Cùng Doanh Nghiệp Việt Nam Vươn Tầm Quốc Tế Bền Vững.",
+  "commitments": {
+    "commitment-1": {
+      "title": "Nâng Cao Uy Tín Quốc Tế",
+      "description": "Gia tăng độ tin cậy và hình ảnh chuyên nghiệp của doanh nghiệp trên thị trường toàn cầu."
+    },
+    "commitment-2": {
+      "title": "Mở Rộng Cơ Hội Xuất Khẩu",
+      "description": "Hỗ trợ doanh nghiệp tiếp cận Indonesia và các thị trường Hồi giáo quốc tế."
+    },
+    "commitment-3": {
+      "title": "Gia Tăng Niềm Tin Người Tiêu Dùng",
+      "description": "Xây dựng lòng tin thông qua hệ thống Halal minh bạch và được chứng nhận."
+    },
+    "commitment-4": {
+      "title": "Phát Triển Bền Vững",
+      "description": "Đồng hành xây dựng chiến lược phát triển quốc tế dài hạn và bền vững."
+    },
+    "commitment-5": {
+      "title": "Đáp Ứng Tiêu Chuẩn Halal Quốc Tế",
+      "description": "Đảm bảo hệ thống vận hành phù hợp với các yêu cầu Halal toàn cầu."
+    }
+  }
+}

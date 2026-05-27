@@ -1,0 +1,35 @@
+{
+  "badge": "CERTIFICATION PROCESS",
+  "title": "A Clear & Structured Halal Certification Journey",
+  "description": "Our step-by-step process helps businesses achieve Indonesian Halal certification efficiently, transparently, and with full professional guidance.",
+  "steps": {
+    "step-1": {
+      "title": "Initial Consultation",
+      "description": "Reviewing business operations, products, ingredients, and certification goals."
+    },
+    "step-2": {
+      "title": "Compliance Gap Assessment",
+      "description": "Identifying areas that require improvement before certification."
+    },
+    "step-3": {
+      "title": "Documentation Preparation",
+      "description": "Supporting businesses in preparing all required documents and records."
+    },
+    "step-4": {
+      "title": "Factory Inspection & Internal Review",
+      "description": "Evaluating production systems and operational Halal readiness."
+    },
+    "step-5": {
+      "title": "Certification Submission",
+      "description": "Submitting documentation for official certification review."
+    },
+    "step-6": {
+      "title": "Audit Coordination & Corrective Actions",
+      "description": "Assisting businesses during inspections and corrective action processes."
+    },
+    "step-7": {
+      "title": "Certification Completion",
+      "description": "Finalizing certification issuance after successful approval."
+    }
+  }
+}

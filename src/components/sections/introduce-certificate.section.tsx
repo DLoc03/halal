@@ -37,7 +37,7 @@ function IntroduceCertificateSection() {
 
   return (
     <section
-      id="why-choose-us"
+      id="introduce-certificate"
       className="relative overflow-hidden rounded-[3rem] bg-[#07111F] px-4 py-20 text-white"
     >
       {/* Background Effects */}

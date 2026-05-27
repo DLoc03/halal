@@ -1,0 +1,28 @@
+{
+  "badge": "OUR COMMITMENT",
+  "title": "Building Trust Through Global Halal Standards",
+  "description": "We believe Halal certification is more than a regulatory requirement — it represents trust, transparency, and international business excellence.",
+  "quote": "Empowering Vietnamese Businesses For Sustainable Global Growth.",
+  "commitments": {
+    "commitment-1": {
+      "title": "International Reputation",
+      "description": "Strengthening brand credibility and professional recognition in global markets."
+    },
+    "commitment-2": {
+      "title": "Export Opportunities",
+      "description": "Supporting businesses in expanding into Indonesia and international Muslim markets."
+    },
+    "commitment-3": {
+      "title": "Consumer Confidence",
+      "description": "Enhancing trust through transparent and certified Halal compliance systems."
+    },
+    "commitment-4": {
+      "title": "Sustainable Growth",
+      "description": "Helping businesses develop long-term and sustainable international strategies."
+    },
+    "commitment-5": {
+      "title": "Global Halal Standards",
+      "description": "Ensuring operational readiness aligned with international Halal expectations."
+    }
+  }
+}

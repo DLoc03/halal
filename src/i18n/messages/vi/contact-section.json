@@ -1,0 +1,21 @@
+{
+  "badge": "LIÊN HỆ",
+  "title": "Sẵn Sàng Mở Rộng Doanh Nghiệp Vào Thị Trường Halal Toàn Cầu?",
+  "description": "Đội ngũ của chúng tôi luôn sẵn sàng đồng hành cùng doanh nghiệp với giải pháp chứng nhận Halal chuyên nghiệp và đáng tin cậy.",
+  "subDescription": "Liên hệ ngay hôm nay để nhận tư vấn phù hợp cho doanh nghiệp của bạn.",
+  "contactInfo": {
+    "hotline": "Hotline",
+    "email": "Email",
+    "website": "Website",
+    "address": "Địa Chỉ Văn Phòng"
+  },
+  "form": {
+    "title": "Gửi Thông Tin Liên Hệ",
+    "name": "Họ Và Tên",
+    "email": "Địa Chỉ Email",
+    "phone": "Số Điện Thoại",
+    "company": "Tên Doanh Nghiệp",
+    "message": "Nội Dung Liên Hệ",
+    "submit": "Gửi Thông Tin"
+  }
+}

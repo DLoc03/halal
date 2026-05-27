@@ -1,0 +1,21 @@
+{
+  "badge": "CONTACT US",
+  "title": "Ready To Expand Into The Global Halal Market?",
+  "description": "Our team is ready to support your business with professional and reliable Halal certification solutions tailored to your operational needs.",
+  "subDescription": "Contact us today for a personalized consultation and start your Halal certification journey with confidence.",
+  "contactInfo": {
+    "hotline": "Hotline",
+    "email": "Email",
+    "website": "Website",
+    "address": "Office Address"
+  },
+  "form": {
+    "title": "Send Us A Message",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "company": "Company Name",
+    "message": "Your Message",
+    "submit": "Send Inquiry"
+  }
+}

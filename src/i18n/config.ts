@@ -17,6 +17,21 @@ import enIntroduceCertificate from "./messages/en/introduce-certificate.json";
 import viServiceSection from "./messages/vi/service-section.json";
 import enServiceSection from "./messages/en/service-section.json";
 
+import viIndustriesSection from "./messages/vi/industries-server.json";
+import enIndustriesSection from "./messages/en/industries-server.json";
+
+import viCertificateSection from "./messages/vi/certificate-process.json";
+import enCertificateSection from "./messages/en/certificate-process.json";
+
+import viWhyChooseUsSection from "./messages/vi/why-choose-us.json";
+import enWhyChooseUsSection from "./messages/en/why-choose-us.json";
+
+import viCommitmentSection from "./messages/vi/commitment-section.json";
+import enCommitmentSection from "./messages/en/commitment-section.json";
+
+import viContactSection from "./messages/vi/contact-section.json";
+import enContactSection from "./messages/en/contact-section.json";
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -28,13 +43,23 @@ i18n
         aboutUsSection: viAboutUsSection,
         introduceCertificate: viIntroduceCertificate,
         servicesSection: viServiceSection,
+        industriesSection: viIndustriesSection,
+        certificateProcess: viCertificateSection,
+        whyChooseUs: viWhyChooseUsSection,
+        commitmentSection: viCommitmentSection,
+        contactSection: viContactSection,
       },
       en: {
         common: enCommon,
         heroSection: enHeroSection,
         aboutUsSection: enAboutUsSection,
         introduceCertificate: enIntroduceCertificate,
-        servicesSection: viServiceSection,
+        servicesSection: enServiceSection,
+        industriesSection: enIndustriesSection,
+        certificateProcess: enCertificateSection,
+        whyChooseUs: enWhyChooseUsSection,
+        commitmentSection: enCommitmentSection,
+        contactSection: enContactSection,
       },
     },
 

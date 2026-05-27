@@ -2,7 +2,7 @@
   "header": {
     "home": "Home",
     "about-us": "About Us",
-    "introduce-certificate": "Certificate Introduction",
+    "introduce-certificate": "Why Halal Certification Matters",
     "services": "Services",
     "industries-serve": "Industries We Serve",
     "certificate-process": "Certification Process",
@@ -10,5 +10,23 @@
     "commitment": "Commitment",
     "contact": "Contact"
   },
-  "language": "Language"
+  "language": "Language",
+  "footer": {
+    "description": "Professional Indonesian Halal certification consulting and compliance solutions supporting Vietnamese businesses in accessing global Muslim markets.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Information",
+    "office": "Office Address",
+    "copyright": "All rights reserved.",
+    "slogan": "Trusted Halal Compliance For Global Market Success.",
+    "sections": {
+      "about-us": "About Us",
+      "introduce-certificate": "Why Halal Certification Matters",
+      "services": "Core Services",
+      "industries-serve": "Industries We Support",
+      "certificate-process": "Certification Process",
+      "why-choose-us": "Why Choose Us",
+      "commitment": "Our Commitment",
+      "contact": "Contact"
+    }
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "badge": "INDUSTRIES WE SUPPORT",
+  "title": "Supporting Diverse Industries Across The Halal Supply Chain",
+  "description": "We work with businesses across multiple sectors to help achieve Indonesian Halal compliance and strengthen international market readiness.",
+  "industries": {
+    "industry-1": {
+      "title": "Food & Beverage",
+      "description": "Processed foods, frozen products, confectionery, beverages, dairy products, and convenience foods."
+    },
+    "industry-2": {
+      "title": "Seafood & Agriculture",
+      "description": "Seafood processing, agricultural exports, spices, coffee, and agricultural ingredients."
+    },
+    "industry-3": {
+      "title": "Restaurants & Hospitality",
+      "description": "Restaurants, cafés, catering services, hotels, and tourism businesses."
+    },
+    "industry-4": {
+      "title": "Cosmetics & Personal Care",
+      "description": "Cosmetics, skincare, perfumes, and personal hygiene products."
+    },
+    "industry-5": {
+      "title": "Pharmaceutical & Healthcare",
+      "description": "Pharmaceuticals, supplements, and healthcare-related products."
+    },
+    "industry-6": {
+      "title": "Manufacturing & Packaging",
+      "description": "Food packaging, food-contact materials, and industrial manufacturing systems."
+    }
+  }
+}

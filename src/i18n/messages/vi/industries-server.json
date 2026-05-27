@@ -1,0 +1,31 @@
+{
+  "badge": "NGÀNH HÀNG HỖ TRỢ",
+  "title": "Đồng Hành Cùng Nhiều Ngành Hàng Trong Chuỗi Cung Ứng Halal",
+  "description": "Chúng tôi hỗ trợ doanh nghiệp thuộc nhiều lĩnh vực khác nhau đáp ứng tiêu chuẩn Halal Indonesia và nâng cao năng lực tiếp cận thị trường quốc tế.",
+  "industries": {
+    "industry-1": {
+      "title": "Thực Phẩm & Đồ Uống",
+      "description": "Thực phẩm chế biến, thực phẩm đông lạnh, bánh kẹo, nước giải khát và sản phẩm sữa."
+    },
+    "industry-2": {
+      "title": "Thủy Sản & Nông Sản",
+      "description": "Nhà máy chế biến thủy sản, nông sản xuất khẩu, gia vị, cà phê và nguyên liệu nông nghiệp."
+    },
+    "industry-3": {
+      "title": "Nhà Hàng & Khách Sạn",
+      "description": "Nhà hàng, quán café, dịch vụ catering, khách sạn và doanh nghiệp du lịch."
+    },
+    "industry-4": {
+      "title": "Mỹ Phẩm & Chăm Sóc Cá Nhân",
+      "description": "Mỹ phẩm, chăm sóc da, nước hoa và sản phẩm vệ sinh cá nhân."
+    },
+    "industry-5": {
+      "title": "Dược Phẩm & Chăm Sóc Sức Khỏe",
+      "description": "Dược phẩm, thực phẩm chức năng và sản phẩm chăm sóc sức khỏe."
+    },
+    "industry-6": {
+      "title": "Sản Xuất & Bao Bì",
+      "description": "Bao bì thực phẩm, vật liệu tiếp xúc thực phẩm và hệ thống sản xuất công nghiệp."
+    }
+  }
+}

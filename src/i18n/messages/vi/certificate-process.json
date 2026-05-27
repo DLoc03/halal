@@ -1,0 +1,35 @@
+{
+  "badge": "QUY TRÌNH CHỨNG NHẬN",
+  "title": "Quy Trình Chứng Nhận Halal Minh Bạch & Chuyên Nghiệp",
+  "description": "Chúng tôi đồng hành cùng doanh nghiệp qua từng bước để đạt chứng nhận Halal Indonesia một cách hiệu quả, rõ ràng và tối ưu.",
+  "steps": {
+    "step-1": {
+      "title": "Tư Vấn Ban Đầu",
+      "description": "Đánh giá hoạt động doanh nghiệp, sản phẩm, nguyên liệu và mục tiêu chứng nhận."
+    },
+    "step-2": {
+      "title": "Đánh Giá Khoảng Cách Tuân Thủ",
+      "description": "Xác định các điểm cần cải thiện trước khi chứng nhận."
+    },
+    "step-3": {
+      "title": "Chuẩn Bị Hồ Sơ",
+      "description": "Hỗ trợ doanh nghiệp hoàn thiện hồ sơ và tài liệu cần thiết."
+    },
+    "step-4": {
+      "title": "Kiểm Tra Nhà Máy & Đánh Giá Nội Bộ",
+      "description": "Đánh giá hệ thống sản xuất và mức độ sẵn sàng tuân thủ Halal."
+    },
+    "step-5": {
+      "title": "Nộp Hồ Sơ Chứng Nhận",
+      "description": "Hồ sơ được gửi để thực hiện đánh giá chính thức."
+    },
+    "step-6": {
+      "title": "Điều Phối Đánh Giá & Khắc Phục",
+      "description": "Hỗ trợ xử lý các điểm chưa phù hợp trong quá trình đánh giá."
+    },
+    "step-7": {
+      "title": "Hoàn Tất Chứng Nhận",
+      "description": "Hoàn thiện cấp chứng nhận sau khi doanh nghiệp đạt yêu cầu."
+    }
+  }
+}
