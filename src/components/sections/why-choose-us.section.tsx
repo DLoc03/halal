@@ -60,7 +60,7 @@ function WhyChooseUsSection() {
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           {/* Left Side */}
           <div className="grid gap-6 sm:grid-cols-2">
-            {reasons.map((reason, index) => {
+            {reasons.map((reason) => {
               const Icon = reason.icon;
 
               return (

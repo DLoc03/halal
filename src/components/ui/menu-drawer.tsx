@@ -1,7 +1,6 @@
 import Logo from "./logo";
 import HeaderItem from "./header-item";
 import { MOBILE_SECTION_IDS } from "@/constant/section-ids";
-import { useTranslation } from "react-i18next";
 
 type MenuDrawerProps = {
   open: boolean;
@@ -9,8 +8,6 @@ type MenuDrawerProps = {
 };
 
 function MenuDrawer({ open, onClose }: MenuDrawerProps) {
-  const isActive = (path: string) => path === "id";
-
   return (
     <>
       {/* Overlay */}
@@ -30,12 +27,7 @@ function MenuDrawer({ open, onClose }: MenuDrawerProps) {
         <Logo size="120px" className={"px-4"} />
         <nav className="flex flex-col gap-y-3">
           {MOBILE_SECTION_IDS.map((menu, index) => (
-            <HeaderItem
-              key={index}
-              menu={menu}
-              isActive={isActive(menu.id)}
-              onClose={onClose}
-            />
+            <HeaderItem key={index} menu={menu} onClose={onClose} />
           ))}
         </nav>
       </div>

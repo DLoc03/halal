@@ -7,8 +7,6 @@ import { DESKTOP_SECTION_IDS } from "@/constant/section-ids";
 import LanguageSwitcher from "../common/language-switcher";
 
 function Header() {
-  const isActive = (path) => path === "id";
-
   const [show, setShow] = useState(true);
   const [rotated, setRotated] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -50,7 +48,6 @@ function Header() {
                 <HeaderItem
                   key={index}
                   menu={menu}
-                  isActive={isActive(menu.id)}
                   onClose={() => setOpenDrawer(false)}
                 />
               ))}
