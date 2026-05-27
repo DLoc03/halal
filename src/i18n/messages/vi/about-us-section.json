@@ -1,0 +1,19 @@
+{
+  "badge": "VỀ CHÚNG TÔI",
+  "title": "Đối Tác Chứng Nhận Halal Đáng Tin Cậy",
+  "description": "Chúng tôi hỗ trợ doanh nghiệp Việt Nam đáp ứng tiêu chuẩn Halal Indonesia thông qua dịch vụ tư vấn chuyên nghiệp, hướng dẫn tuân thủ và hỗ trợ chứng nhận quốc tế.",
+  "cards": {
+    "card-1": {
+      "title": "Chuyên Môn Pháp Lý",
+      "description": "Am hiểu chuyên sâu về tiêu chuẩn Halal Indonesia và yêu cầu tuân thủ quốc tế."
+    },
+    "card-2": {
+      "title": "Hỗ Trợ Toàn Diện",
+      "description": "Đồng hành từ chuẩn bị hồ sơ đến đánh giá và hoàn thiện chứng nhận."
+    },
+    "card-3": {
+      "title": "Mở Rộng Toàn Cầu",
+      "description": "Hỗ trợ doanh nghiệp tiếp cận thị trường Hồi giáo quốc tế một cách tự tin."
+    }
+  }
+}

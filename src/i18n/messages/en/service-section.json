@@ -1,0 +1,57 @@
+{
+  "badge": "CORE SERVICES",
+  "title": "Professional Halal Consulting & Certification Services",
+  "description": "Comprehensive solutions designed to help businesses achieve Indonesian Halal compliance and expand confidently into global Muslim markets.",
+  "services": {
+    "service-1": {
+      "title": "Indonesian Halal Certification",
+      "description": "Professional consulting and compliance support for businesses pursuing Indonesian Halal certification.",
+      "highlights": [
+        "Certification requirement analysis",
+        "Halal compliance assessment",
+        "Export readiness consulting",
+        "Risk identification & planning"
+      ]
+    },
+    "service-2": {
+      "title": "Ingredient & Supply Chain Verification",
+      "description": "Ensuring transparency and traceability across ingredients, suppliers, and production materials.",
+      "highlights": [
+        "Ingredient verification",
+        "Supplier compliance review",
+        "Traceability assessment",
+        "Cross-contamination control"
+      ]
+    },
+    "service-3": {
+      "title": "Factory Audit Preparation",
+      "description": "Helping factories establish operational readiness for Halal certification audits and inspections.",
+      "highlights": [
+        "Production process review",
+        "Facility assessment",
+        "Halal risk management",
+        "Internal audit support"
+      ]
+    },
+    "service-4": {
+      "title": "Documentation & Certification Support",
+      "description": "Administrative and technical assistance throughout the certification process.",
+      "highlights": [
+        "Application preparation",
+        "Halal policy development",
+        "Certification coordination",
+        "Corrective action guidance"
+      ]
+    },
+    "service-5": {
+      "title": "Halal Training Programs",
+      "description": "Training programs designed to build sustainable long-term Halal compliance systems.",
+      "highlights": [
+        "Halal standards overview",
+        "Production system training",
+        "Hygiene & safety practices",
+        "Internal monitoring systems"
+      ]
+    }
+  }
+}

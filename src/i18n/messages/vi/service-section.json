@@ -1,0 +1,57 @@
+{
+  "badge": "DỊCH VỤ CỐT LÕI",
+  "title": "Dịch Vụ Tư Vấn Và Chứng Nhận Halal Chuyên Nghiệp",
+  "description": "Giải pháp toàn diện giúp doanh nghiệp đáp ứng tiêu chuẩn Halal Indonesia và tự tin mở rộng vào thị trường Hồi giáo toàn cầu.",
+  "services": {
+    "service-1": {
+      "title": "Chứng Nhận Halal Indonesia",
+      "description": "Dịch vụ tư vấn chuyên nghiệp và hỗ trợ tuân thủ dành cho doanh nghiệp muốn đạt chứng nhận Halal Indonesia.",
+      "highlights": [
+        "Phân tích yêu cầu chứng nhận",
+        "Đánh giá mức độ tuân thủ Halal",
+        "Tư vấn sẵn sàng xuất khẩu",
+        "Xác định rủi ro và lập kế hoạch"
+      ]
+    },
+    "service-2": {
+      "title": "Xác Minh Nguyên Liệu & Chuỗi Cung Ứng",
+      "description": "Đảm bảo tính minh bạch và khả năng truy xuất nguồn gốc của nguyên liệu và nhà cung cấp.",
+      "highlights": [
+        "Kiểm tra nguyên liệu",
+        "Đánh giá nhà cung cấp",
+        "Xác minh truy xuất nguồn gốc",
+        "Kiểm soát chống nhiễm chéo"
+      ]
+    },
+    "service-3": {
+      "title": "Chuẩn Bị Đánh Giá Nhà Máy",
+      "description": "Hỗ trợ doanh nghiệp xây dựng hệ thống vận hành sẵn sàng cho đánh giá và chứng nhận Halal.",
+      "highlights": [
+        "Đánh giá quy trình sản xuất",
+        "Kiểm tra cơ sở vật chất",
+        "Quản lý rủi ro Halal",
+        "Hỗ trợ đánh giá nội bộ"
+      ]
+    },
+    "service-4": {
+      "title": "Hỗ Trợ Hồ Sơ & Chứng Nhận",
+      "description": "Hỗ trợ hành chính và kỹ thuật xuyên suốt quá trình đăng ký và chứng nhận.",
+      "highlights": [
+        "Chuẩn bị hồ sơ đăng ký",
+        "Xây dựng chính sách Halal",
+        "Điều phối chứng nhận",
+        "Hướng dẫn khắc phục"
+      ]
+    },
+    "service-5": {
+      "title": "Chương Trình Đào Tạo Halal",
+      "description": "Đào tạo giúp doanh nghiệp xây dựng hệ thống tuân thủ Halal bền vững và lâu dài.",
+      "highlights": [
+        "Tổng quan tiêu chuẩn Halal",
+        "Đào tạo hệ thống sản xuất",
+        "Vệ sinh và an toàn",
+        "Hệ thống giám sát nội bộ"
+      ]
+    }
+  }
+}

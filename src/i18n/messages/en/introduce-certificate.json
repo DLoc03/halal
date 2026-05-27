@@ -1,0 +1,41 @@
+{
+  "badge": "WHY IT MATTERS",
+  "title": "Why Indonesian Halal Certification Matters",
+  "description": "Indonesian Halal certification helps businesses access one of the world’s largest Muslim consumer markets while strengthening international trust and global expansion opportunities.",
+  "stats": {
+    "stat-1": {
+      "value": "280M+",
+      "label": "Muslim Consumers"
+    },
+    "stat-2": {
+      "value": "Global",
+      "label": "Market Opportunities"
+    },
+    "stat-3": {
+      "value": "Trusted",
+      "label": "Compliance Standards"
+    }
+  },
+  "cards": {
+    "card-1": {
+      "title": "Market Access",
+      "description": "Simplify entry into Indonesia and meet regulatory import requirements."
+    },
+    "card-2": {
+      "title": "Global Expansion",
+      "description": "Strengthen acceptance across Southeast Asia and Muslim-majority markets."
+    },
+    "card-3": {
+      "title": "Consumer Trust",
+      "description": "Build confidence through certified and transparent Halal compliance."
+    },
+    "card-4": {
+      "title": "Brand Reputation",
+      "description": "Demonstrate quality assurance and responsible manufacturing practices."
+    },
+    "card-5": {
+      "title": "Competitive Advantage",
+      "description": "Stand out across retail, hospitality, export, and e-commerce industries."
+    }
+  }
+}

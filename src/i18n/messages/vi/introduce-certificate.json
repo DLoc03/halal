@@ -1,0 +1,41 @@
+{
+  "badge": "TẠI SAO QUAN TRỌNG",
+  "title": "Tại Sao Chứng Nhận Halal Indonesia Quan Trọng",
+  "description": "Chứng nhận Halal Indonesia giúp doanh nghiệp tiếp cận một trong những thị trường tiêu dùng Hồi giáo lớn nhất thế giới, đồng thời nâng cao uy tín và cơ hội mở rộng quốc tế.",
+  "stats": {
+    "stat-1": {
+      "value": "280M+",
+      "label": "Người Tiêu Dùng Hồi Giáo"
+    },
+    "stat-2": {
+      "value": "Toàn Cầu",
+      "label": "Cơ Hội Thị Trường"
+    },
+    "stat-3": {
+      "value": "Uy Tín",
+      "label": "Tiêu Chuẩn Tuân Thủ"
+    }
+  },
+  "cards": {
+    "card-1": {
+      "title": "Tiếp Cận Thị Trường",
+      "description": "Hỗ trợ doanh nghiệp đáp ứng yêu cầu nhập khẩu và mở rộng vào Indonesia."
+    },
+    "card-2": {
+      "title": "Mở Rộng Quốc Tế",
+      "description": "Tăng khả năng tiếp cận tại Đông Nam Á và các thị trường Hồi giáo."
+    },
+    "card-3": {
+      "title": "Niềm Tin Khách Hàng",
+      "description": "Gia tăng độ tin cậy thông qua chứng nhận Halal minh bạch."
+    },
+    "card-4": {
+      "title": "Nâng Tầm Thương Hiệu",
+      "description": "Khẳng định cam kết về chất lượng và sản xuất có trách nhiệm."
+    },
+    "card-5": {
+      "title": "Lợi Thế Cạnh Tranh",
+      "description": "Nổi bật trong thương mại quốc tế, bán lẻ và thương mại điện tử."
+    }
+  }
+}

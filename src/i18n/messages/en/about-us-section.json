@@ -1,0 +1,19 @@
+{
+  "badge": "ABOUT US",
+  "title": "Trusted Halal Certification Partner",
+  "description": "We help Vietnamese businesses achieve Indonesian Halal compliance through professional consulting, regulatory guidance, and international certification support.",
+  "cards": {
+    "card-1": {
+      "title": "Regulatory Expertise",
+      "description": "Comprehensive knowledge of Indonesian Halal standards and compliance requirements."
+    },
+    "card-2": {
+      "title": "End-to-End Support",
+      "description": "From document preparation to audit readiness and certification assistance."
+    },
+    "card-3": {
+      "title": "Global Expansion",
+      "description": "Supporting businesses entering international Muslim markets with confidence."
+    }
+  }
+}
