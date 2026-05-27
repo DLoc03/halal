@@ -1,3 +1,4 @@
+import ScrollToTopButton from "./components/common/scroll-top-button";
 import Footer from "./components/layout/footer";
 import Header from "./components/layout/header";
 import AboutUs from "./components/sections/about-us";
@@ -25,6 +26,8 @@ function App() {
         <CommitmentSection />
         <ContactSection />
       </div>
+      <ScrollToTopButton />
+
       <Footer />
     </>
   );
