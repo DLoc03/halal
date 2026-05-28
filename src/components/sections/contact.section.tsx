@@ -1,6 +1,15 @@
-import { Phone, Mail, Globe, MapPin, ArrowRight } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Globe,
+  MapPin,
+  ArrowRight,
+  ChevronDown,
+  Check,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import toast from "react-hot-toast";
 
 const contactItems = [
   {
@@ -26,19 +35,56 @@ const contactItems = [
   },
 ];
 
+const services = [
+  "service-1",
+  "service-2",
+  "service-3",
+  "service-4",
+  "service-5",
+];
+
 function ContactSection() {
-  const { t, i18n } = useTranslation("contactSection");
+  const { t, i18n } = useTranslation(["contactSection", "servicesSection"]);
+
+  const [openSelect, setOpenSelect] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
+    service: "",
     message: "",
   });
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setOpenSelect(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const validateEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -47,12 +93,54 @@ function ContactSection() {
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    setLoading(true);
     e.preventDefault();
 
-    console.log("CONTACT FORM:", formData);
+    const { name, email, phone, company, service } = formData;
 
-    // TODO:
-    // Integrate API submit here later
+    const isEmpty = !name || !email || !phone || !company || !service;
+
+    if (isEmpty) {
+      toast.error(t("toast.error.required", { ns: "contactSection" }));
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      toast.error(t("toast.error.email", { ns: "contactSection" }));
+      return;
+    }
+
+    // SUCCESS
+    fetch("/api.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+      .then((res) => res.json())
+      .then(() => {
+        toast.success(
+          `${t("toast.success.title", { ns: "contactSection" })}\n${t(
+            "toast.success.description",
+            { ns: "contactSection" },
+          )}`,
+        );
+        setFormData((prev) => ({
+          ...prev,
+          email: "",
+          name: "",
+          phone: "",
+          company: "",
+          service: "",
+          message: "",
+        }));
+      })
+      .catch((err) => {
+        console.error("Lỗi gửi mail:", err);
+        toast.error(t("toast.error.error", { ns: "contactSection" }));
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
@@ -128,7 +216,7 @@ function ContactSection() {
             </h3>
 
             <p className="text-base leading-8 text-gray-600">
-              Fill out the form below and our team will contact you shortly.
+              {t("form.subtitle")}
             </p>
           </div>
 
@@ -171,6 +259,103 @@ function ContactSection() {
               />
             </div>
 
+            {/* Service Select */}
+            <div className="relative" ref={dropdownRef}>
+              <label className="mb-3 block text-sm font-semibold tracking-wide text-gray-700 uppercase">
+                {t("form.service")}
+              </label>
+
+              {/* Trigger */}
+              <button
+                type="button"
+                onClick={() => setOpenSelect((prev) => !prev)}
+                className={`group flex h-14 w-full items-center justify-between rounded-2xl border bg-gradient-to-br from-white to-gray-50 px-5 text-left shadow-sm transition-all duration-300 ${
+                  openSelect
+                    ? "border-primary ring-primary/10 ring-4"
+                    : "border-gray-200 hover:border-gray-300"
+                }`}
+              >
+                <span
+                  className={`text-sm font-medium ${
+                    formData.service ? "text-gray-800" : "text-gray-400"
+                  }`}
+                >
+                  {formData.service
+                    ? formData.service
+                    : t("form.selectService")}
+                </span>
+
+                <div
+                  className={`bg-primary/10 text-primary flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 ${
+                    openSelect ? "rotate-180" : ""
+                  }`}
+                >
+                  <ChevronDown size={18} />
+                </div>
+              </button>
+
+              {/* Dropdown */}
+              <div
+                className={`absolute top-[calc(100%+12px)] left-0 z-50 w-full overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-300 ${
+                  openSelect
+                    ? "visible translate-y-0 opacity-100"
+                    : "invisible -translate-y-2 opacity-0"
+                }`}
+              >
+                <div className="max-h-80 overflow-y-auto p-2">
+                  {services.map((service) => {
+                    const isSelected = formData.service === service;
+
+                    return (
+                      <button
+                        key={service}
+                        type="button"
+                        onClick={() => {
+                          setFormData((prev) => ({
+                            ...prev,
+                            service: t(`services.${service}.title`, {
+                              ns: "servicesSection",
+                            }),
+                          }));
+
+                          setOpenSelect(false);
+                        }}
+                        className={`group flex w-full items-center justify-between rounded-2xl px-4 py-4 text-left transition-all duration-200 ${
+                          isSelected
+                            ? "bg-primary/10 text-primary"
+                            : "hover:bg-gray-50"
+                        }`}
+                      >
+                        <div>
+                          <p className="text-sm font-semibold">
+                            {t(`services.${service}.title`, {
+                              ns: "servicesSection",
+                            })}
+                          </p>
+
+                          <p className="mt-1 text-xs leading-6 text-gray-500">
+                            {t(`services.${service}.description`, {
+                              ns: "servicesSection",
+                            })}
+                          </p>
+                        </div>
+
+                        <div
+                          className={`ml-4 flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300 ${
+                            isSelected
+                              ? "bg-primary text-white"
+                              : "bg-gray-100 text-transparent"
+                          }`}
+                        >
+                          <Check size={14} />
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+
             {/* Message */}
             <textarea
               name="message"
@@ -185,6 +370,7 @@ function ContactSection() {
             <button
               type="submit"
               className="bg-primary hover:bg-primary/90 inline-flex h-14 items-center justify-center gap-3 rounded-2xl px-8 font-semibold text-white transition-all duration-300 hover:shadow-xl"
+              disabled={loading}
             >
               {t("form.submit")}
 

@@ -20,7 +20,7 @@ const banners = [
 ];
 
 function HeroSection() {
-  const { t } = useTranslation("heroSection");
+  const { t } = useTranslation(["heroSection", "common"]);
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -42,7 +42,7 @@ function HeroSection() {
         <div className="flex flex-col items-center text-center">
           {/* Badge */}
           <div className="border-primary/20 text-primary mb-5 rounded-full border bg-white/80 px-5 py-2 text-[10px] font-semibold tracking-[0.25em] uppercase shadow-lg backdrop-blur-xl sm:text-xs">
-            {t("badge")}
+            {t("common:meta")}
           </div>
 
           {/* Heading */}

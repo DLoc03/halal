@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ScrollToTopButton from "./components/common/scroll-top-button";
 import Footer from "./components/layout/footer";
 import Header from "./components/layout/header";
@@ -10,10 +11,17 @@ import IndustriesServeSection from "./components/sections/industries-serve.secti
 import IntroduceCertificateSection from "./components/sections/introduce-certificate.section";
 import ServicesSection from "./components/sections/services.section";
 import WhyChooseUsSection from "./components/sections/why-choose-us.section";
+import { useTranslation } from "react-i18next";
+import { Toaster } from "react-hot-toast";
 
 function App() {
+  const { t } = useTranslation("common");
+  useEffect(() => {
+    document.title = t("meta");
+  }, [t]);
   return (
     <>
+      <Toaster position="bottom-right" />
       <Header />
       <div className="mx-auto max-w-7xl space-y-6 px-2 pt-20 lg:space-y-12 xl:px-0">
         <HeroSection />

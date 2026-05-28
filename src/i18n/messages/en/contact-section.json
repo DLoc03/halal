@@ -11,11 +11,25 @@
   },
   "form": {
     "title": "Send Us A Message",
+    "subtitle": "Fill out the form below and our team will contact you shortly.",
     "name": "Full Name",
     "email": "Email Address",
     "phone": "Phone Number",
     "company": "Company Name",
     "message": "Your Message",
-    "submit": "Send Inquiry"
+    "submit": "Send Inquiry",
+    "service": "Service",
+    "selectService": "Select a service"
+  },
+  "toast": {
+    "error": {
+      "required": "Please fill in all required fields.",
+      "email": "Invalid email format.",
+      "error": "Something's wrong! Please try it later!"
+    },
+    "success": {
+      "title": "Message sent successfully!",
+      "description": "We will contact you shortly."
+    }
   }
 }

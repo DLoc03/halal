@@ -11,11 +11,25 @@
   },
   "form": {
     "title": "Gửi Thông Tin Liên Hệ",
+    "subtitle": "Hãy điền vào mẫu bên dưới và nhóm của chúng tôi sẽ liên hệ với bạn trong thời gian ngắn.",
     "name": "Họ Và Tên",
     "email": "Địa Chỉ Email",
     "phone": "Số Điện Thoại",
     "company": "Tên Doanh Nghiệp",
     "message": "Nội Dung Liên Hệ",
-    "submit": "Gửi Thông Tin"
+    "submit": "Gửi Thông Tin",
+    "service": "Dịch vụ",
+    "selectService": "Chọn dịch vụ"
+  },
+  "toast": {
+    "error": {
+      "required": "Vui lòng điền đầy đủ thông tin bắt buộc.",
+      "email": "Email không hợp lệ.",
+      "error": "Có lỗi xảy ra! Vui lòng thử lại sau!"
+    },
+    "success": {
+      "title": "Gửi thông tin thành công!",
+      "description": "Chúng tôi sẽ liên hệ bạn sớm nhất."
+    }
   }
 }
