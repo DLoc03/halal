@@ -8,6 +8,8 @@ import {
 import { useTranslation } from "react-i18next";
 import { motion, type Variants } from "framer-motion";
 
+import image from "@assets/why_choose_us/why_choose_us.jpg";
+
 const reasons = [
   { key: "reason-1", icon: ShieldCheck },
   { key: "reason-2", icon: Sparkles },
@@ -168,7 +170,7 @@ function WhyChooseUsSection() {
             custom={0.15}
           >
             <img
-              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
+              src={image}
               alt="why-choose-us"
               className="h-[700px] w-full object-cover"
             />

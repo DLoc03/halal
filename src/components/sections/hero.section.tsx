@@ -2,23 +2,24 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 
+import image_1 from "@assets/hero_section/hero_1.jpg";
+import image_2 from "@assets/hero_section/hero_2.jpg";
+import image_3 from "@assets/hero_section/hero_3.jpg";
+
 const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 const banners = [
   {
     key: "slide-1",
-    image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1600&auto=format&fit=crop",
+    image: image_1,
   },
   {
     key: "slide-2",
-    image:
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop",
+    image: image_2,
   },
   {
     key: "slide-3",
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop",
+    image: image_3,
   },
 ];
 

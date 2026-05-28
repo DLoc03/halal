@@ -1,6 +1,8 @@
 import { ShieldCheck, Globe, FileCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion, type Variants } from "framer-motion";
+import image_1 from "@assets/about_us/about_us_1.jpg";
+import image_2 from "@assets/about_us/about_us_2.jpg";
 
 const cards = [
   { key: "card-1", icon: ShieldCheck },
@@ -90,7 +92,7 @@ function AboutUsSection() {
             custom={0}
           >
             <img
-              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop"
+              src={image_1}
               alt="about-us"
               className="h-[520px] w-full object-cover"
             />
@@ -106,7 +108,7 @@ function AboutUsSection() {
             custom={0.25}
           >
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+              src={image_2}
               alt="team"
               className="h-72 w-full object-cover"
             />
