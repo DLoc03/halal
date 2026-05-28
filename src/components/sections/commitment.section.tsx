@@ -6,29 +6,70 @@ import {
   BadgeCheck,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { motion, type Variants } from "framer-motion";
 
 const commitments = [
-  {
-    key: "commitment-1",
-    icon: Globe2,
-  },
-  {
-    key: "commitment-2",
-    icon: TrendingUp,
-  },
-  {
-    key: "commitment-3",
-    icon: ShieldCheck,
-  },
-  {
-    key: "commitment-4",
-    icon: Leaf,
-  },
-  {
-    key: "commitment-5",
-    icon: BadgeCheck,
-  },
+  { key: "commitment-1", icon: Globe2 },
+  { key: "commitment-2", icon: TrendingUp },
+  { key: "commitment-3", icon: ShieldCheck },
+  { key: "commitment-4", icon: Leaf },
+  { key: "commitment-5", icon: BadgeCheck },
 ];
+
+// ─── Constants ───────────────────────────────────────────────────────────────
+
+const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number];
+
+// ─── Variants ────────────────────────────────────────────────────────────────
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 28 },
+  visible: (delay: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: EASE, delay },
+  }),
+};
+
+const fadeDown: Variants = {
+  hidden: { opacity: 0, y: -16 },
+  visible: (delay: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: EASE, delay },
+  }),
+};
+
+// Quote block — fade + scale lên nhẹ
+const fadeScale: Variants = {
+  hidden: { opacity: 0, scale: 0.96, y: 20 },
+  visible: (delay: number = 0) => ({
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: EASE, delay },
+  }),
+};
+
+// Commitment cards — stagger
+const cardsContainer: Variants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.05 },
+  },
+};
+
+const cardItem: Variants = {
+  hidden: { opacity: 0, y: 28, scale: 0.97 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.5, ease: EASE },
+  },
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 function CommitmentSection() {
   const { t } = useTranslation("commitmentSection");
@@ -41,52 +82,100 @@ function CommitmentSection() {
       {/* Background */}
       <div className="absolute inset-0">
         <div className="bg-primary/20 absolute top-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full blur-3xl" />
-
         <div className="absolute top-0 left-0 h-full w-full bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_40%)]" />
       </div>
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-16">
-        {/* Header */}
+        {/* ── Header ──────────────────────────────────────────────────────── */}
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <div className="bg-primary/10 text-primary border-primary/20 mb-6 rounded-full border px-5 py-2 text-xs font-semibold tracking-[0.25em] uppercase backdrop-blur-xl">
+          <motion.div
+            className="bg-primary/10 text-primary border-primary/20 mb-6 rounded-full border px-5 py-2 text-xs font-semibold tracking-[0.25em] uppercase backdrop-blur-xl"
+            variants={fadeDown}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={0}
+          >
             {t("badge")}
-          </div>
+          </motion.div>
 
           <div className="space-y-6">
-            <h2 className="text-4xl leading-tight font-bold sm:text-5xl lg:text-6xl">
+            <motion.h2
+              className="text-4xl leading-tight font-bold sm:text-5xl lg:text-6xl"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={0.1}
+            >
               {t("title")}
-            </h2>
+            </motion.h2>
 
-            <p className="text-base leading-8 text-gray-300 sm:text-lg">
+            <motion.p
+              className="text-base leading-8 text-gray-300 sm:text-lg"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={0.2}
+            >
               {t("description")}
-            </p>
+            </motion.p>
           </div>
         </div>
 
-        {/* Quote */}
-        <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.04] px-8 py-14 text-center backdrop-blur-xl">
+        {/* ── Quote ───────────────────────────────────────────────────────── */}
+        <motion.div
+          className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.04] px-8 py-14 text-center backdrop-blur-xl"
+          variants={fadeScale}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          custom={0}
+        >
           <div className="bg-primary/10 absolute -top-10 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full blur-3xl" />
 
           <div className="relative mx-auto max-w-4xl">
-            <p className="text-primary mb-6 text-sm font-semibold tracking-[0.3em] uppercase">
+            <motion.p
+              className="text-primary mb-6 text-sm font-semibold tracking-[0.3em] uppercase"
+              variants={fadeDown}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={0.15}
+            >
               Global Halal Vision
-            </p>
+            </motion.p>
 
-            <h3 className="text-3xl leading-tight font-bold text-white sm:text-4xl lg:text-5xl">
-              “{t("quote")}”
-            </h3>
+            <motion.h3
+              className="text-3xl leading-tight font-bold text-white sm:text-4xl lg:text-5xl"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={0.25}
+            >
+              "{t("quote")}"
+            </motion.h3>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Commitment Cards */}
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+        {/* ── Commitment Cards ────────────────────────────────────────────── */}
+        <motion.div
+          className="grid gap-6 md:grid-cols-2 xl:grid-cols-5"
+          variants={cardsContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
           {commitments.map((commitment) => {
             const Icon = commitment.icon;
 
             return (
-              <div
+              <motion.div
                 key={commitment.key}
                 className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-7 transition-all duration-500 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.06] hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
+                variants={cardItem}
               >
                 {/* Glow */}
                 <div className="bg-primary/10 group-hover:bg-primary/20 absolute -top-10 -right-10 h-32 w-32 rounded-full blur-3xl transition-all duration-500" />
@@ -106,10 +195,10 @@ function CommitmentSection() {
                     {t(`commitments.${commitment.key}.description`)}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

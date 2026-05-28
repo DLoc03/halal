@@ -8,6 +8,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { motion, type Variants } from "framer-motion";
 
 const industries = [
   {
@@ -48,41 +49,113 @@ const industries = [
   },
 ];
 
+// ─── Constants ───────────────────────────────────────────────────────────────
+
+const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number];
+
+// ─── Variants ────────────────────────────────────────────────────────────────
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 28 },
+  visible: (delay: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: EASE, delay },
+  }),
+};
+
+const fadeDown: Variants = {
+  hidden: { opacity: 0, y: -16 },
+  visible: (delay: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: EASE, delay },
+  }),
+};
+
+// Grid stagger — trigger khi grid vào viewport
+const gridContainer: Variants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.05 },
+  },
+};
+
+const gridItem: Variants = {
+  hidden: { opacity: 0, y: 32, scale: 0.97 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.55, ease: EASE },
+  },
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 function IndustriesServeSection() {
   const { t } = useTranslation("industriesSection");
 
   return (
-    <section id="industries-serve" className="relativ">
+    <section id="industries-serve" className="relative">
       {/* Background */}
       <div className="bg-primary/10 absolute right-0 bottom-0 h-72 w-72 rounded-full blur-3xl" />
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-14">
-        {/* Header */}
+        {/* ── Header ──────────────────────────────────────────────────────── */}
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <div className="text-primary bg-primary/10 mb-6 rounded-full px-5 py-2 text-xs font-semibold tracking-[0.25em] uppercase">
+          <motion.div
+            className="text-primary bg-primary/10 mb-6 rounded-full px-5 py-2 text-xs font-semibold tracking-[0.25em] uppercase"
+            variants={fadeDown}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={0}
+          >
             {t("badge")}
-          </div>
+          </motion.div>
 
           <div className="space-y-6">
-            <h2 className="text-4xl leading-tight font-bold text-gray-900 sm:text-5xl lg:text-6xl">
+            <motion.h2
+              className="text-4xl leading-tight font-bold text-gray-900 sm:text-5xl lg:text-6xl"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={0.1}
+            >
               {t("title")}
-            </h2>
+            </motion.h2>
 
-            <p className="text-base leading-8 text-gray-600 sm:text-lg">
+            <motion.p
+              className="text-base leading-8 text-gray-600 sm:text-lg"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={0.2}
+            >
               {t("description")}
-            </p>
+            </motion.p>
           </div>
         </div>
 
-        {/* Industries Grid */}
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {/* ── Industries Grid ──────────────────────────────────────────────── */}
+        <motion.div
+          className="grid gap-6 md:grid-cols-2 xl:grid-cols-3"
+          variants={gridContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+        >
           {industries.map((industry) => {
             const Icon = industry.icon;
 
             return (
-              <div
+              <motion.div
                 key={industry.key}
                 className="group overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+                variants={gridItem}
               >
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
@@ -119,10 +192,10 @@ function IndustriesServeSection() {
                     {t(`industries.${industry.key}.description`)}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

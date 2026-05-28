@@ -22,7 +22,6 @@ Dịch vụ: {$service}
 Nội dung:
 {$messageText}
 EOD;
-EOD;
 
 
     $headers = "From: Halal Supreme <no-reply@halalsupreme.com>\r\n";
